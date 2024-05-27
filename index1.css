@@ -1,0 +1,720 @@
+/* COMMON STYLE STARY */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap');
+
+:root {
+    --themeRed: #e43a47;
+    --gray: #efefef;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+button,
+body {
+    font-family: "Poppins",sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ 
+p{
+    font-size: 25px;
+    line-height: 26px;
+}
+.fullContainer {
+    width: 100%;
+}
+.container {
+    width: 1340px;
+    margin: auto;
+}
+
+.sectionTitle{
+    width: 300px;
+    border-bottom: 3px solid var(--themeRed);
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 200;
+    margin: 0 auto 50px;
+    position: relative;
+    padding: 10px 0;
+    text-transform: uppercase;
+}
+
+.sectionTitle::after {
+    display: inline-block;
+    content: "";
+    height: 15px;
+    width: 15px;
+    background-color: var(--themeRed);
+    position: absolute;
+    left:calc(50% - 10px);
+    top: calc(75% - 7px);
+    transform: rotate(45deg) translate(50%, 50%);
+    border: 3px solid #fff;
+}
+
+section{
+    padding: 100px 0;
+    position: relative;
+}
+
+/* COMMON STYLE END */
+
+/* HOME STYLE START */
+
+header {
+    width: 100%;
+    background-color: #16151599;
+    position: fixed;
+    z-index: 2;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+header.container .logo  {
+    padding: 15px 0;
+    height: 75px;
+}
+
+header .container .logo img {
+    height: 100%;
+}
+header nav ul{
+    list-style-type: none;
+}
+header nav ul li {
+    display: inline-block;
+}
+header nav ul li a {
+    display: inline-block;
+    height: 75px;
+    line-height: 75px;
+    padding: 0 15px;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+    transform: 0.3s;
+}
+
+header nav ul li a:hover{
+    background-color: var(--themeRed);
+}
+
+.banner {
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../miniproject/Image/b3.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.banner h1 {
+    margin-top: 230px;
+    display:inline-block;
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 0 0 2px #000;
+    width: 50%;
+    line-height: 4.0rem;
+    font-weight: 100;
+
+}
+
+.banner h1 span {
+    background-color: var(--themeRed);
+    display: inline-block;
+    line-height: 3.5rem;
+    padding: 0 15px;
+    font-weight: 600;
+    border-radius: 5px;
+}
+
+.banner p {
+    
+    color: black;
+    width: 50%;
+    text-shadow: 0 0 2px #000;
+    margin-top: 10px;
+}
+
+
+
+.banner button{
+    background-color: var(--themeRed);
+    border: 0;
+    outline: none;
+    color: white;
+    padding: 10px 15px;
+    margin-top: 10px;
+    font-size: 20px;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/* HOME STYLE END */
+
+/* style for about us*/
+#aboutSection p {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 10px 0 30px;
+    font-weight: 400;
+    text-shadow: 0 0 1px;
+    width: 100%;
+
+}
+
+#aboutSection .cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 50px;
+    position: relative;
+    height: 245px;
+}
+
+#aboutSection .cards > div {
+    width: 350px;
+    background-color: var(--gray);
+    padding: 35px;
+    column-gap: #444 ;
+    text-align: center;
+    border-radius: 15px;
+    height: 215px;
+    border: 1px solid #ccc;
+    transition: 0.4s;
+}
+
+#aboutSection .cards > div:hover{
+    width: 400px;
+    margin-top: -20px;
+    border-color: var(--themeRed);
+    padding: 55px;
+    height: auto;
+}
+
+#aboutSection .cards > div .title {
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+#aboutSection .cards > div p {
+    font-size: 14px;
+    margin-top: 15px;
+
+
+}
+
+#aboutSection .cards >div button {
+    border: 1px solid var(--themeRed);
+    outline: none;
+    padding: 7px 15px;
+    margin-top: 15px;
+    font-size: 12px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: 0.3s;
+    border-radius: 5px;
+}
+
+#aboutSection .cards > div:hover button {
+    background-color: var(--themeRed);
+    color:#fff
+}
+
+#aboutSection{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../miniproject/Image/b1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+
+/* style end for about us */
+
+/* Program section start */
+#programsSection{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../miniproject/Image/backgroundprogram.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+.programs{
+    background-color: #e2e2e2;
+}
+
+.programs .boxContainer {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 50px;
+}
+
+.programs .boxContainer .box {
+    background-color: #fff;
+    text-align: center;
+    padding-bottom: 25px;
+    border-radius: 5px;
+    box-shadow: 0 0 3px #c5c5c5;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.programs .boxContainer .box .cardImage {
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    border-radius: 5px 5px 0 0;
+}
+
+.programs .boxContainer .box .cardImage::after {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+    content:"";
+    position: absolute;
+    left: 0;
+    top: 0;
+    filter: grayscale(100%);
+    transition: 0.4s;
+}
+
+.programs .boxContainer .box:nth-child(1) .cardImage,
+.programs .boxContainer .box:nth-child(1) .cardImage:after{
+    background-image: url("../miniproject/Image/program1.jpg");
+}
+
+.programs .boxContainer .box:nth-child(2) .cardImage,
+.programs .boxContainer .box:nth-child(2) .cardImage:after{
+    background-image: url("../miniproject/Image/program2.jpg");
+}
+
+.programs .boxContainer .box:nth-child(3) .cardImage,
+.programs .boxContainer .box:nth-child(3) .cardImage:after{
+    background-image: url("../miniproject/Image/program3.jpg");
+}
+
+.programs .boxContainer .box:nth-child(4) .cardImage,
+.programs .boxContainer .box:nth-child(4) .cardImage:after{
+    background-image: url("../miniproject/Image/program4.jpg");
+}
+
+.programs .boxContainer .box:hover .cardImage:after {
+    top: 100%;
+}
+
+.programs .boxContainer .box .programTitle {
+    font-size: 16px;
+    margin-top: 15px;
+    font-weight: 600;
+    color: #444;
+
+}
+
+.programs .boxContainer .box .donatonCount{
+    font-size: 13px;
+    font-weight: 600;
+    margin-top: 10px;
+
+}
+
+.programs .boxContainer .box .donatonCount span{
+    color: var(--themeRed);
+
+}
+
+.programs .boxContainer .box button{
+    position: absolute;
+    left: 50%;
+    background-color: var(--themeRed);
+    color: #fff;
+    transform: translate(-50%);
+    bottom: -15px;
+    border-radius: 60px;
+    padding: 7px 15px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+}
+
+/*education section start*/
+
+.education {
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+
+}
+
+.education .videoPlayer {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    transform:translate(-50%, -50%);
+
+}
+.education .sectionTitle{
+    color: #fff;
+    text-shadow: 0 0 4px #000;
+}
+
+.education .educationContainer {
+    position: absolute;
+    background-color: #00000096;
+    width: 600px;
+    color: #fff;
+    text-shadow: 0 0 3px #000;
+    padding: 30px;
+}
+
+.education .educationContainer h3{
+    font-size: 35px;
+    font-weight: 300;
+
+}
+.education .educationContainer p {
+    font-size: 15px;
+    line-height: 20px;
+    margin: 10px 0 30px;
+
+}
+
+.education .educationContainer button {
+    background-color: var(--themeRed);
+    border: 0;
+    color: #fff;
+    padding: 10px 25px;
+    font-weight: bold;
+    font-size: 18px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 6px;
+}
+
+/*education section end*/
+
+
+/*gallery section start*/
+#gallerySection{
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../miniproject/Image/gallerybackground.jpg" );
+    background-size: cover;
+    background-attachment: fixed;
+}
+.gallery .galleryContainer {
+    column-count: 3;
+    column-gap: 20px;
+    cursor: pointer;
+}
+
+.gallery .galleryContainer .item{
+    position: relative;
+    margin-bottom: 20px;
+    overflow: hidden;
+
+}
+
+.gallery .galleryContainer img{
+    width: 100%;
+    display: block;
+    transition: 0.4s;
+
+}
+
+.gallery .galleryContainer .title{
+    position: absolute;
+    background-color: var(--gray);
+    padding: 5px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 13px;
+    font-weight: bold;
+    opacity: 0;
+    z-index: 1;
+    transition: 0.4s;
+
+}
+
+.gallery .galleryContainer .item:hover .title{
+    opacity: 1;
+}
+
+.gallery .galleryContainer .item:hover img {
+    transform: scale(1.2);
+}
+
+/*join us section start */
+
+.join {
+    background-image: url("../miniproject/Image/b3.jpg");
+    color: #fff;
+}
+
+.join .joinTitle {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.join .joinTitle span{
+    font-weight: 800;
+}
+
+.join p {
+    font-size: 20px;
+    font-weight: 100;
+}    
+
+.join button {
+    padding: 7px 15px;
+    margin-top: 20px;
+    border: 0;
+    outline: none;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.join button.joinNow {
+    margin-right: 10px;
+    background-color: #424242 ;
+    color: #fff;
+    
+}
+.join button.adoptBtn{
+    background-color: var(--gray);
+    
+}
+
+/* footer section start */
+
+footer {
+    background-color: #181818;
+    color: #7f7f7f;
+    padding: 50px 0;
+    font-size: 14px;
+}
+
+footer .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-gap: 50px;
+
+}
+
+footer .title{
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-bottom: 2px solid;
+    margin-bottom: 30px;
+    padding: 0 0 5px 0;
+
+}
+
+footer p{
+    margin-bottom: 10px;
+    font-size: 15px;
+
+}
+
+footer .linksContainer ul{
+    list-style-type:none;
+}
+footer .linksContainer ul li a {
+    text-decoration: none;
+    color: #7f7f7f;
+    margin-bottom: 10px;
+    display: inline-block;
+    font-size: 17px;
+}
+
+footer .newsLetterContainer img {
+    height: 150px;
+    margin-bottom: 10px;
+
+}
+
+footer .connectContainer input {
+    background-color:transparent ;
+    border: 1px solid #7f7f7f;
+    outline: none;
+    padding: 10px 15px;
+    width: 150px;
+    margin-top: 10px;
+    color: #ccc;
+    border-radius: 30px;
+}
+
+footer .connectContainer button{
+    background-color: var(--themeRed);
+    border: 0;
+    outline: none;
+    color: white;
+    padding: 10px 10px;
+    margin-left: 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+
+
+/*trial*/
+.missionSec{
+    position:relative;
+    overflow: hidden;
+    word-spacing: 0.5rem;
+    letter-spacing: 2px;
+    overflow-x: hidden;
+    min-height: 100vh;
+    width: 100%;
+    background-image: url("../miniproject/Image/backgroundprogram.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    
+   
+    
+}
+
+.missionSec .missdiv2{
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.missionSec .missdiv2 .missTitle1{
+    font-size: 2rem;
+    font-family: 'Staatliches', cursive;
+    color: rgb(255, 123, 0);
+    text-align: center;
+    letter-spacing: 2px;
+}
+.missionSec .missdiv2 .missTitle2{
+    font-size: 3rem;
+    font-family: "Poppins",sans-serif;
+    margin: 1rem 0;
+    text-align: center;
+    color: rgb(32, 113, 189);;
+    padding: 0 2rem;
+}
+.missionSec .missdiv2 .missTitle3{
+    font-size: 1.2rem;
+    margin: 1rem 0;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+    color: rgb(189, 82, 32);;
+    padding: 0 2rem;
+}
+.missionSec .missdiv2 .missdivTwoNum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:3rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+.missionSec .missdivTwoNum .year{
+    font-size: 1.2rem;
+    color: rgb(255, 123, 0);
+    font-family: 'Staatliches', cursive;
+}
+.missionSec .missdivTwoNum .num{
+    font-size: 6.5rem;
+    font-family: 'Staatliches', cursive;
+}
+.missionSec .missdivTwoNum .num span{
+    color: #ff9d00;
+}
+.missionSec .missdivTwoNum .mil{
+    font-size: 1.2rem;
+    color: rgb(195, 88, 0);
+    font-family: 'Staatliches', cursive;
+}
+
+.missionslidCon{
+    margin-top: 2rem;
+    width:70%;
+    height:20rem;
+    position: relative;
+    overflow: hidden;
+}
+.missSld{
+    position: relative;
+    width:400%; 
+    height: 100%;
+    display: flex;
+    left:0;
+    animation: slide 20s ease infinite;
+}
+@keyframes slide{
+    0%{
+        left:0;
+    }
+    21%{
+        left:0;
+    }
+    26%{
+        left:-100%;
+    }
+    47%{
+        left:-100%;
+    }
+    53%{
+        left:-200%;
+    }
+    73%{
+        left:-200%;
+    }
+    79%{
+        left:-300%;
+    }
+    100%{
+        left:-300%;
+    }
+    
+    
+}
+.misSlddiv{
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:2rem
+}
+.misSlddiv img{
+    width:15rem;
+    height:15rem;
+    border-radius: 50%;
+    border: 0.5rem solid rgba(189, 189, 189, 0.835);
+}
+.misSlddiv .misSldDescpt h1{
+    font-size: 2rem;
+    font-family: var(--font2);
+    font-weight: 800;
+    color: #c35800;
+}
+.misSlddiv .misSldDescpt p{
+    font-size: 1.5rem;
+    font-family: var(--font2);
+    color: rgb(56, 56, 56);
+    padding-top: 0.5rem;
+     width: 70%;
+    text-shadow: 0 0 2px rgb(56, 56, 56);
+   
+}
